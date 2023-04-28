@@ -1,0 +1,393 @@
+/* UNIVERSAL PROPERTIES */
+
+.head-txt {
+  font-family: "EB Garamond", serif;
+  color: white;
+  font-size: 3.5vw;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: black;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-logo {
+  width: 2.7rem;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 2rem;
+}
+
+.navbar-brand {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-left: 1.5rem;
+}
+
+/* HEADER IMAGE */
+
+.header-pic {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Petemoss", cursive;
+}
+
+.head-img {
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  transition-property: all;
+  transition-duration: 0.8s;
+}
+
+/* .head-img:hover {
+  opacity: 0.8;
+} */
+
+.img-btn {
+  border-style: solid;
+  border-radius: 10px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  font-size: 2.5vw;
+  text-align: center;
+  border-width: 0.2rem;
+  border-color: black;
+  background-color: #2c3333;
+  opacity: 0.8;
+  color: white;
+  padding: 0 1vw;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.img-btn:hover {
+  background-color: black;
+  color: white;
+  opacity: 1;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.header-pic:hover .img-overlay {
+  opacity: 1;
+}
+
+.header-pic:hover .head-img {
+  opacity: 0.7;
+}
+
+.overlay-txt {
+  color: white;
+  font-size: 1.9vw;
+  line-height: 2.4vw;
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  left: 50%;
+  font-family: "EB Garamond", serif;
+}
+
+/* WORK DISPLAY */
+
+.wrk-dis {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 7vw 0vw;
+}
+
+.carousel {
+  width: 76vw;
+  text-align: center;
+  left: 11vw;
+  padding: 3vw 0 3vw;
+}
+
+.img-wrk {
+  border-radius: 10px;
+}
+
+.wrk-txt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  padding: 4vw 10vw;
+}
+
+/* MORE LINK */
+
+.more-lnk {
+  text-align: center;
+  padding: 0 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lnk-txt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  padding: 4vw 10vw;
+  color: white;
+}
+
+.port-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3vw;
+}
+
+.cont {
+  width: 18vw;
+  height: 27vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  perspective: 800px;
+}
+
+.cont:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  padding: 0.5vw;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  transition: all;
+  transition-duration: 1500ms;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  box-shadow: 6px 6px 10px 1px gray;
+  border-radius: 0.3vw;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8vw 1vw;
+  line-height: 1.4vw;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.port-link {
+  margin-top: 4vw;
+  background-color: #37aa9c;
+  font-size: 1.3vw;
+  border-radius: 0.2vw;
+  border-style: none;
+  color: white;
+  padding: 0.3vw 0.5vw;
+  transition: all 100ms;
+  box-shadow: 2px 5px 2px #888888;
+}
+
+.port-link:hover {
+  background-color: #94f3e4;
+  font-size: 1.5vw;
+  color: black;
+  padding: 0.5vw 0.8vw;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+  margin: 3vw 0vw;
+  padding: 0vw 2vw;
+}
+
+.container {
+  margin: 0;
+}
+
+/* NFT SECTION */
+
+.token {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-txt {
+  padding: 10vw 5vw;
+  color: white;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+  background-color: black;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+.nft-head {
+  margin: 4vw 0;
+}
+
+.nft-btn {
+  margin-top: 50px;
+  color: black;
+  width: fit-content;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 1.4vw;
+  border-style: none;
+  transition: all 100ms;
+  padding: 5px;
+}
+
+.nft-btn:hover {
+  font-size: 1.7vw;
+  cursor: pointer;
+  color: black;
+}
+
+.nftimg {
+  width: 55vw;
+}
+
+/* ABOUT SECTION */
+
+.contact {
+  position: relative;
+}
+
+.abt-img {
+  width: 100%;
+}
+
+.my-img {
+  width: 100%;
+}
+
+.abt-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  font-size: 1.3vw;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  left: 50%;
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  padding: 3vw;
+  border-radius: 0.5vw;
+}
+
+.headabt-txt {
+  font-family: "EB Garamond", serif;
+  color: white;
+  font-size: 3.5vw;
+  margin-bottom: 2vw;
+}
+
+/* CONTACT ME  */
+
+.con-txt {
+  font-family: "EB Garamond", serif;
+  color: white;
+  font-size: 3vw;
+  padding: 7vw 5vw;
+}
+
+.col-rght-foot {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 0.8vw;
+  color: white;
+  padding: 7vw 5vw;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5vw;
+}
+
+.acc {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.acc:hover {
+  font-size: 1.6vw;
+  color: white;
+}
+
+/* FOOTER */
+
+.foot {
+  color: white;
+  font-size: 0.7vw;
+  text-align: center;
+  width: 100%;
+  line-height: 0.8vw;
+}
